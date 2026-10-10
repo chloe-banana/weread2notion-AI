@@ -15,7 +15,7 @@ class WeReadError(RuntimeError):
 
 
 class WeReadClient:
-   def __init__(self, api_key: str, skill_version: str = "1.0.5", session=None):
+    def __init__(self, api_key: str, skill_version: str = "1.0.5", session=None):
         self.skill_version = skill_version
         self.session = session or requests.Session()
         self.session.headers.update(
